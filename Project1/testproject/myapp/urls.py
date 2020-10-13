@@ -20,6 +20,9 @@ import myapp.views as vw
 urlpatterns = [
     path('hello/',vw.hello,name='hello'),
     path('morning/',vw.morning,name='morning'),
-    path(r'var/(\d)/',vw.var,name='var'),
+    path(r'var/',vw.var,name='var'),
+    path('code/',vw.dynPage,name='dynPage'),
+    path('ms/',vw.master_slave,name='master_slave'),
+    path('db/',vw.crudops,name='crudops'),
 ]
 

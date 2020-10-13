@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing Code</title>
+</head>
+<body>
+	<h1>This site is for Testing Variables and codes</h1>
+	<h5>{{today}}</h5>
+	<br> This day is 
+	{% if today.day == 1 %}
+		the 1st day of the month.
+	{% elif today.day >= 15 %}
+	   the last of the month.
+	{% else %}
+		the begning of the month.
+	{%endif%}
+	{% for day in weekdays %}
+		<p>
+			{{ day }}
+		
+		</p>
+	{% endfor %}
+</body>
+</html>
